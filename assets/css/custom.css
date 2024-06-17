@@ -1,0 +1,173 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 2.1;
+  font-size: 16px;
+  color: #3E3D3B;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Playfair Display", serif;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+h1 { 
+  font-size: 56px;
+}
+h2 { 
+  font-size: 48px;
+}
+h3 { 
+  font-size: 40px;
+}
+h4 { 
+  font-size: 32px;
+  position: relative;
+  display: inline-block;
+}
+h5 { 
+  font-size: 24px;
+}
+h6 { 
+  font-size: 20px;
+}
+
+img {
+  width: 100%;
+  border-radius: 19px;
+}
+
+h4::after {
+  content: " ";
+  position: absolute;
+  background-color:#FFB800;
+  height: 3px;
+  width: 80%;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+.banner {
+  position: relative;
+  background-image: url('../images/francesinha-mondego.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+.navbar-brand:hover {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FFB800;
+}
+.banner .container-description { 
+  position: relative; 
+  top: 50%; 
+  transform: translateY(-50%);
+  background: #00000066;
+  border-radius: 19px;
+  padding: 30px 20px;
+  max-width: 560px;
+  left: 4.4rem;
+  float: left;
+}
+
+.banner p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 30px;
+  line-height: 1.6;
+}
+
+.banner h1 {
+  color: #FFB800;
+}
+
+.bg-gray {
+  background-color: #F2F2F2;
+}
+
+.bg-yellow {
+  background-color:#FFB800;
+}
+
+
+.text-justify {
+  text-align: justify;
+}
+
+.border-gray {
+  border-left-color: #3E3D3B !important;
+}
+
+#contact p {
+  line-height:1.0;
+}
+
+#contact h4::after {
+  background-color: #3E3D3B;
+}
+
+.icon-social {
+  width: 40px !important; 
+} 
+
+#contact p img {
+  width: 20px;
+}
+
+.card-carousel {
+  position: relative;
+  width: 364px;
+  height: 416px;
+  background-color: red;
+  border-radius: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.card-carousel:hover::before {
+  content: " "; 
+  background-color:#00000066;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.card-carousel p {
+  display: none;
+  padding: 36px;
+  bottom: -100px;
+}
+
+.card-carousel:hover p {
+  display: block;
+  position: relative;
+}
+
+.card-carousel:hover h5 {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .banner .container-description {
+    left: 0;
+  }
+}
+
